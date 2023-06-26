@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav>
+             <div class="main-nav">
+                <a href="#">
+                    <img src="logo.jpg" class="logo-img">
+                </a>
+                <div class="nav-link">
+                    <ul>
+                        <li class="nav-link-items" id="finance" onclick="makeActive('finance')">Finance</li>
+                        <li class="nav-link-items" id="politics" onclick="makeActive('politics')">Politics</li>
+                        <li class="nav-link-items" id="sports" onclick="makeActive('sports')">Sports</li>
+                        <li class="nav-link-items" id="science" onclick="makeActive('science')">Science</li>
+                        <li class="nav-link-items" id="technology" onclick="makeActive('technology')">Technology</li>
+                        <li class="nav-link-items" id="music" onclick="makeActive('music')">Music</li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="search-input" class="search-input" placeholder="e.g. Weather,Education and others">
+                    <button id="search-button" class="search-button" >Search</button>
+                </div>
+             </div>
+      </nav>
+      <main>
+        <div class="card-container" id="card-container">
+           
+        </div>
+      </main>
+      <template id="template-card">
+        <div class="card" id="card">
+            <div class="header">
+                <img src="https://via.placeholder.com/300x300" class="header_img" id="header_img">
+            </div>
+            <div class="content">
+                <h3 id="title" class="title">This is the title</h3>
+                <h5 id="source" class="source">Source 16/06/2023</h5>
+                <p id="desc" class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit voluptas sed vitae quod iure nulla ea nihil. Ab minima quod ratione similique temporibus distinctio, atque veritatis nemo voluptas nulla.
+                </p>
+            </div>
+        </div>
+      </template>
+      <script src="script.js"></script>
+</body>
+</html>
